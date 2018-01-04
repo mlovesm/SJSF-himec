@@ -76,7 +76,6 @@ public class BoardAdapter extends BaseAdapter{
 				viewHolder.board_data2 = (TextView)v.findViewById(R.id.textView2);
 				viewHolder.board_data3 = (TextView)v.findViewById(R.id.textView3);
 				viewHolder.board_data4 = (TextView)v.findViewById(R.id.textView4);
-				viewHolder.board_data5 = (TextView)v.findViewById(R.id.textView5);
 
 			}else{
 				v = inflater.inflate(R.layout.basic_list_item2, parent,false);
@@ -107,7 +106,6 @@ public class BoardAdapter extends BaseAdapter{
 			viewHolder.board_data2.setText(boardList.get(position).get("data2").toString());
 			viewHolder.board_data3.setText(boardList.get(position).get("data3").toString());
 			viewHolder.board_data4.setText(boardList.get(position).get("data4").toString());
-			viewHolder.board_data5.setText(boardList.get(position).get("data5").toString());
 
 		}else{
 			viewHolder.board_data1.setText(boardList.get(position).get("data1").toString());
@@ -137,7 +135,6 @@ public class BoardAdapter extends BaseAdapter{
 		TextView board_data2;
 		TextView board_data3;
 		TextView board_data4;
-		TextView board_data5;
 	}
 	
 

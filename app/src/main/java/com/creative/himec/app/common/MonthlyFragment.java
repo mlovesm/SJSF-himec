@@ -103,12 +103,11 @@ public class MonthlyFragment extends Fragment {
                             HashMap<String,String> hashMap = new HashMap<>();
                             hashMap.put("key",response.body().getList().get(i).get("idx"));
                             hashMap.put("data1",response.body().getList().get(i).get("plan_sdate")
-                                +" ~ "+response.body().getList().get(i).get("plan_edate"));
-                            hashMap.put("data2",response.body().getList().get(i).get("plan_stime")
-                                    +" ~ "+response.body().getList().get(i).get("plan_etime"));
+                                    +"  "+response.body().getList().get(i).get("plan_stime")+"   ~ ");
+                            hashMap.put("data2",response.body().getList().get(i).get("plan_edate")
+                                    +"  "+response.body().getList().get(i).get("plan_etime"));
                             hashMap.put("data3",response.body().getList().get(i).get("plan_title"));
-                            hashMap.put("data4",UtilClass.MillToDate(Long.parseLong(response.body().getList().get(i).get("writer_date"))));
-                            hashMap.put("data5",response.body().getList().get(i).get("writer_nm"));
+                            hashMap.put("data4",response.body().getList().get(i).get("plan_locate"));
                             arrayList.add(hashMap);
                         }
 
