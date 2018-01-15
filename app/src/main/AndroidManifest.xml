@@ -49,12 +49,6 @@
             android:screenOrientation="sensor">
         </activity>
 
-        <activity android:name="com.creative.himec.app.gear.GearPopupActivity" android:theme="@style/Theme.AppCompat.Light.Dialog">
-        </activity>
-
-        <activity android:name="com.creative.himec.app.safe.SafePopupActivity" android:theme="@style/Theme.AppCompat.Light.Dialog">
-        </activity>
-
         <activity android:name="com.creative.himec.app.government.PeoplesCardDialogActivity" android:theme="@style/Theme.AppCompat.Light.Dialog">
         </activity>
 
