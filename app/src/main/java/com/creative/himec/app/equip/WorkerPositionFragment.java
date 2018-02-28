@@ -61,7 +61,7 @@ public class WorkerPositionFragment extends Fragment {
         textTitle.setText(title);
         view.findViewById(R.id.top_write).setVisibility(View.VISIBLE);
 
-        tv_button1.setText(UtilClass.getCurrentDate(2, "."));
+        tv_button1.setText(UtilClass.getCurrentDate(1, "."));
         tv_button2.setText(UtilClass.getCurrentDate(1, "."));
 
         async_progress_dialog();
@@ -160,7 +160,7 @@ public class WorkerPositionFragment extends Fragment {
         day= calendar.get(Calendar.DAY_OF_MONTH);
 
         if(gubun.equals("SD")){
-            DatePickerDialog dialog = new DatePickerDialog(getActivity(), date_listener, year, month, 1);
+            DatePickerDialog dialog = new DatePickerDialog(getActivity(), date_listener, year, month, day);
             dialog.show();
         }else{
             DatePickerDialog dialog = new DatePickerDialog(getActivity(), date_listener, year, month, day);
